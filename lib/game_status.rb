@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   if board.all? {|current| current.nil? || current == ' '}
-    return false
+    return true
   else
     WIN_COMBINATIONS.each do|combination|
       character = board[combination[0]]
